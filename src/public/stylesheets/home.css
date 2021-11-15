@@ -1,4 +1,8 @@
 body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
     background-image: url("../images/background/textura-oscura-acuarela.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,13 +11,33 @@ body {
 }
 
 .home-title {
-    color: seashell;
+    color: red;
+    font-size: 4rem;
+    margin-right: 2rem;
+    padding-top: 10px;
+}
+
+.box-title {
+    background-color: yellow;
+    width: 80%;
+    height: 110px;
+    text-align: end;
+}
+
+.stars {
+    color: aliceblue;
 }
 
 .home-subtitle {
-    font-size: 17px;
+    font-size: 20px;
     font-style: italic;
     color: seashell;
+}
+
+.box-subtitle {
+    width: 40%;
+    text-align: end;
+    margin-left: 500px;
 }
 
 .box-home {
@@ -24,8 +48,8 @@ body {
 }
 
 .fanz-box {
-    width: 430px;
-    height: 430px;
+    width: 700px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
