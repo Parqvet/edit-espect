@@ -10,28 +10,42 @@ body {
     background-attachment: fixed;
 }
 
-.home-title {
-    color: red;
-    font-size: 4rem;
-    margin-right: 2rem;
-    padding-top: 10px;
+/* Navbar */
+.navbar-home {
+    padding: .8rem;
+    display: flex;
+    justify-content: end;
 }
 
-.box-title {
-    background-color: yellow;
-    width: 80%;
-    height: 110px;
-    text-align: end;
+.link-cafecito {
+    color: #00FFF0;
+}
+
+/* Home Title */
+.home-title-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .stars {
-    color: aliceblue;
+    text-align: center;
+    color: #00FFF0;
 }
 
-.home-subtitle {
-    font-size: 20px;
-    font-style: italic;
-    color: seashell;
+.box-title {
+    background-color: #FAFF1A;
+    width: 80%;
+    height: 110px;
+    text-align: end;
+    margin-top: 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.title {
+    color:#FF1EE8;
+    font-size: 4rem;
+    margin-right: 2rem;
+    padding-top: 10px;
 }
 
 .box-subtitle {
@@ -40,11 +54,21 @@ body {
     margin-left: 500px;
 }
 
+.home-subtitle {
+    font-size: 20px;
+    font-style: italic;
+    color: seashell;
+}
+
+/* Home Content */
 .box-home {
     width: 80%;
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .fanz-box {

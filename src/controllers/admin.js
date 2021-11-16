@@ -52,6 +52,26 @@ const storeFanzine = async (req, res, next) => {
     }
 }
 
+const renderEditFanzine = async (req, res, next) => {
+    try {
+        const fanzine = await findById(req.params.id);
+        res.render('admin/fanzine', { fanzine });
+    } catch (error) {
+        next(error);
+    }
+}
+
+const updateFanzine = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        let { title, description } = req.body;
+        await update(id, title, description);
+        res.redirect('/');
+    } catch (error) {
+        next(error);
+    }
+}
+
 const renderLogin = (req, res) => {
     res.render('login');
 }
@@ -60,5 +80,7 @@ module.exports = {
     renderFanzines,
     createFanzine,
     storeFanzine,
+    renderEditFanzine,
+    updateFanzine,
     renderLogin
 }

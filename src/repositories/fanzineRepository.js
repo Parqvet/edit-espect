@@ -18,8 +18,8 @@ class FanzineRepository {
         return await Fanzine.create(fanzine);
     }
 
-    async update(id, fanzine) {
-        return await Fanzine.findByIdAndUpdate(id, fanzine, { new: true });
+    async update(id, title, description) {
+        return await Fanzine.findByIdAndUpdate(id, {title, description});
     }
 
     async remove(id) {

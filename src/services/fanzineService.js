@@ -14,8 +14,8 @@ const save = async (fanzine) => {
     return await repository.save(fanzine);
 }
 
-const update = async (id, fanzine) => {
-    return await repository.update(id, fanzine);
+const update = async (id, title, description) => {
+    return await repository.update(id, title, description);
 }
 
 const remove = async (id) => {

@@ -22,7 +22,7 @@ class ExpressServer {
 
         this._routes();
 
-        // this._notFound();
+        this._notFound();
         this._errorHandler();
 
     }
