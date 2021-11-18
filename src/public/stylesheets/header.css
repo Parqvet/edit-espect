@@ -1,0 +1,19 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.Header-container {
+    background-color: red;
+    /*background-image: url("../images/background/textura-oscura-acuarela.jpg");*/
+}
+
+.Header-mid-container a {
+   color: white;
+}
+.main{
+    color : red;
+}
