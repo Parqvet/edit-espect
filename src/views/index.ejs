@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Epectacular</title>
+    <title>Editorial Epetacular</title>
     <%- include("partials/head") %>
     <link rel="stylesheet" href="/stylesheets/home.css">
 </head>
@@ -17,9 +17,9 @@
 
     <!-- HOME TITLE -->
     <section class="home-title-box">
-        <h4 class="stars my-4">⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧  ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧</h4>
+        <h4 class="stars my-4">⛧ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧  ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛧</h4>
         <div class="box-title">
-            <h1 class="title">Editorial Epectacular</h1>
+            <h1 class="title">Editorial Epetacular</h1>
         </div>
         <div class="box-subtitle my-4">
             <p class="home-subtitle">¡Enhorabuena! Fanzines Epetaculares<p>
@@ -31,11 +31,31 @@
     <div class="box-home">
             
         <% fanzines.forEach(function(fanzine) { %>
+
+            <!-- <svg class="svg-box" xmlns="http://www.w3.org/2000/svg" width="680" height="580" viewBox="0 0 680 580" fill="none">
+                <image class="img-svg" xlink:href="<%= fanzine.imageURL %>" class="img-svg" x="0.381687" y="0.127014" width="680" height="580" />
+                <g filter="url(#filter0_d_349_5)">
+                <path d="M348.001 28.5003C266.001 86.5 158.667 23.1667 138 72.5C92.0003 144.5 -50.4 400.2 28 413C126 429 198.001 527 348.001 567C498.001 607 636 350.363 666 278.363C696 206.363 646 80.5003 548 86.5003C450 92.5003 473.771 -60.4591 348.001 28.5003Z" stroke="red" shape-rendering="crispEdges"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_349_5" x="0.381687" y="0.127014" width="678.78" height="579.58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_349_5"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_349_5" result="shape"/>
+                </filter>
+                </defs>
+            </svg> -->
+
+ 
             <div class="fanz-box">
                 <figure>
                     <img src="<%= fanzine.imageURL %>" alt="" class="card-img-top fanz-img">
                     <div class="txt-d">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime!</p>
                     </div>
                 </figure>
                 <div class="f-title my-3">

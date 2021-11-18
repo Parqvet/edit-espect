@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Market-Deco';
+    src: url(../fonts/Market_Deco.ttf);
+}
+
+@font-face {
+    font-family: 'Amender-Tu';
+    src: url(../fonts/Amender_Tu.ttf);
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -33,19 +43,20 @@ body {
 }
 
 .box-title {
-    background-color: #FAFF1A;
-    width: 80%;
-    height: 110px;
-    text-align: end;
+    /* background-color: #FAFF1A; */
+    width: 100%;
+    /* height: 110px; */
+    text-align: center;
     margin-top: 1.5rem;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 2rem 2rem 0;
 }
 
 .title {
-    color:#FF1EE8;
-    font-size: 4rem;
+    font-family: 'Amender-Tu', sans-serif;
+    color:#FAFF1A;
+    font-size: 8rem;
     margin-right: 2rem;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 .box-subtitle {
@@ -72,31 +83,30 @@ body {
 }
 
 .fanz-box {
-    width: 700px;
-    height: 600px;
+    width: 750px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    border-radius: 5px;
 }
+
 
 .fanz-box figure {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    cursor: pointer;
 }
 
-.fanz-box figure img {
+/* .fanz-box figure img {
     height: 100%;
     width: 100%;
     transition: all 500ms ease-out;
-}
+} */
 
-.fanz-box figure .txt-d {
+/* .fanz-box figure .txt-d {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,19 +114,19 @@ body {
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 0px;     /* Con absolute agregar una posicion con top sino no lo toma */
+    top: 0px;
     width: 430px;
     height: 430px;
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
-}
+} */
 
-figure:hover .txt-d {
+/* figure:hover .txt-d {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .f-title {
     width: 100%;
