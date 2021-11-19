@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 
-
-
-.Header-container {
-    background-color: red;
-    /*background-image: url("../images/background/textura-oscura-acuarela.jpg");*/
+.Header-container nav div ul li a p,
+.Header-container nav button span i{
+   color :white;
+}
+.Header-container{
+    border-bottom: solid 5px white;
 }
 
-.Header-mid-container a {
+.Header-mid-container a p{
    color: white;
 }
-.main{
-    color : red;
+.navbar-toggler{
+   background-color:white;
 }

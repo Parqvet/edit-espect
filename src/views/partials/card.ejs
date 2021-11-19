@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <card class="container-fluid">
+    <!-- HOME CONTENT -->
+    <div class="box-home">
+            
+        <!--<% fanzines.forEach(function(fanzine) { %>
+            <div class="fanz-box row">
+                <figure class="col-6">
+                    <img src="<%= fanzine.imageURL %>" alt="" class="card-img-top fanz-img">
+                    <div class="txt-d">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime!</p>
+                    </div>
+                </figure>
+                <div class="f-title mt-1">
+                    <h4><%- fanzine.title %></h4>
+                    <a href="">Descargar</a>
+                </div>
+            </div>
+        <% }) %> -->
+
+        <% fanzines.forEach(function(fanzine) { %>
+
+        <div class="card mb-5 d-flex justify-content-start" >
+            <img src="<%= fanzine.imageURL %>" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class=""><%- fanzine.title %></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+
+          <% }) %>
+
+    </div> 
+ </card>
+</html>

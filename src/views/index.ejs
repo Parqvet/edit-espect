@@ -15,35 +15,12 @@
 
     <!-- HOME TITLE -->
     <section class="home-title-box">
-        <h4 class="stars my-4">⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧  ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧</h4>
-        <div class="box-title">
-            <h1 class="title">Editorial Epectacular</h1>
-        </div>
-        <div class="box-subtitle my-4">
-            <p class="home-subtitle">¡Enhorabuena! Fanzines Epetaculares<p>
-            <p class="home-subtitle">Usted puede descargar, reenviar, imprimir, fotocopiar, regalar o cualquier acción que expanda, cualquiera de estos fanzines.</p>
-        </div>
+        <h4 class="stars mt-3">⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧  ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧ ⌒ ⛦ ⌒ ⛧</h4>
     </section>
 
-    <!-- HOME CONTENT -->
-    <div class="box-home">
-            
-        <% fanzines.forEach(function(fanzine) { %>
-            <div class="fanz-box">
-                <figure>
-                    <img src="<%= fanzine.imageURL %>" alt="" class="card-img-top fanz-img">
-                    <div class="txt-d">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime!</p>
-                    </div>
-                </figure>
-                <div class="f-title my-3">
-                    <h4><%- fanzine.title %></h4>
-                    <a href="">Descargar</a>
-                </div>
-            </div>
-        <% }) %>
+    <%- include('partials/card')%>
 
-    </div> 
+    
 
 </body>
 </html>
